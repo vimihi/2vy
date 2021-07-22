@@ -105,7 +105,17 @@ body {
 .v-sticker-2 {
   position: absolute;
   margin-top: -135px;
-  right: 30px; }
+  right: 30px;
+  -webkit-transition: -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  z-index: 102; }
+  .v-sticker-2:hover {
+    -webkit-filter: drop-shadow(8px 6px 0px #000000);
+            filter: drop-shadow(8px 6px 0px #000000);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .v-post {
   max-width: 1560;
@@ -162,7 +172,12 @@ body {
       font-size: 72px;
       position: relative;
       cursor: pointer;
-      display: inline-block; }
+      display: inline-block;
+      -webkit-transition: -webkit-filter 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      transition: -webkit-filter 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      transition: filter 0.2s ease-in-out, transform 0.3s ease-in-out;
+      transition: filter 0.2s ease-in-out, transform 0.3s ease-in-out, -webkit-filter 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      -webkit-text-stroke: 1px #333; }
       .v-post .v-post--view-more p:before {
         content: '';
         background-image: url("../asset/images/arrow.png");
@@ -173,5 +188,83 @@ body {
         position: absolute;
         top: 0;
         right: 390px; }
+      .v-post .v-post--view-more p:hover {
+        -webkit-filter: drop-shadow(3px 2px 0px #333333);
+                filter: drop-shadow(3px 2px 0px #333333);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
+
+.v-quote {
+  margin-bottom: 190px; }
+  .v-quote .v-quote__quote-1 .v-quote__quote-1--title {
+    font-family: 'Patrick Hand';
+    font-size: 72px;
+    margin-bottom: 15px;
+    line-height: 97px;
+    -webkit-text-stroke: 1px #333; }
+  .v-quote .v-quote__quote-1 .v-quote__quote-1--text {
+    font-size: 36px;
+    line-height: 45px; }
+  .v-quote .v-quote__quote-1 .v-quote__quote-1--photo {
+    border: 5px solid #333333;
+    -webkit-filter: drop-shadow(15px 15px 0px #000000);
+            filter: drop-shadow(15px 15px 0px #000000);
+    border-radius: 20px;
+    overflow: hidden; }
+    .v-quote .v-quote__quote-1 .v-quote__quote-1--photo img {
+      width: 100%;
+      height: 830px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .v-quote .v-quote__quote-2 {
+    margin-bottom: 80px; }
+    .v-quote .v-quote__quote-2 .v-quote__quote-2__quote-2-1 {
+      margin-bottom: 80px; }
+      .v-quote .v-quote__quote-2 .v-quote__quote-2__quote-2-1 .v-quote__quote-2__quote-2-1--photo {
+        border: 5px solid #333333;
+        -webkit-filter: drop-shadow(15px 15px 0px #000000);
+                filter: drop-shadow(15px 15px 0px #000000);
+        border-radius: 20px;
+        overflow: hidden;
+        margin-left: 80px; }
+        .v-quote .v-quote__quote-2 .v-quote__quote-2__quote-2-1 .v-quote__quote-2__quote-2-1--photo img {
+          width: 100%;
+          height: 460px;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .v-quote .v-quote__quote-2 .v-quote__quote-2__quote-2-1 .v-quote__quote-2__quote-2-1--text {
+        font-size: 36px;
+        line-height: 45px;
+        margin-left: 25px;
+        -webkit-text-stroke: 1px #333; }
+    .v-quote .v-quote__quote-2 .v-quote__quote-2--photo-2 {
+      border: 5px solid #333333;
+      -webkit-filter: drop-shadow(15px 15px 0px #000000);
+              filter: drop-shadow(15px 15px 0px #000000);
+      border-radius: 20px;
+      overflow: hidden; }
+      .v-quote .v-quote__quote-2 .v-quote__quote-2--photo-2 img {
+        width: 100%;
+        height: 650px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .v-quote .v-quote__quote-2 .v-quote__quote-2__quote-2-2 .v-quote__quote-2__quote-2-2--text {
+      font-size: 36px;
+      line-height: 45px;
+      margin-left: 80px;
+      -webkit-text-stroke: 1px #333; }
+  .v-quote .v-quote__quote-3 {
+    padding-left: 80px; }
+    .v-quote .v-quote__quote-3 .v-quote__quote-3--text-1 {
+      font-family: 'Patrick Hand';
+      font-size: 72px;
+      line-height: 97px;
+      -webkit-text-stroke: 1px #333; }
+    .v-quote .v-quote__quote-3 .v-quote__quote-3--text-2 {
+      font-family: 'Patrick Hand';
+      font-size: 72px;
+      line-height: 97px;
+      padding-left: 80px;
+      -webkit-text-stroke: 1px #333; }
 
 /*# sourceMappingURL=styles.css.map */

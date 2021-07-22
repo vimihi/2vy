@@ -1,0 +1,177 @@
+body {
+  font-family: 'Quicksand';
+  font-weight: normal;
+  color: #333333;
+  background-color: #f8f6ed; }
+
+.v-header {
+  padding: 35px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+  margin-left: 0;
+  margin-right: 0; }
+  .v-header .v-logo {
+    width: 270px;
+    height: 100px;
+    background-color: #c4c4c4;
+    border-radius: 20px; }
+  .v-header .v-nav ul {
+    list-style: none; }
+    .v-header .v-nav ul li {
+      float: left;
+      margin-left: 50px;
+      font-size: 24px;
+      text-transform: uppercase;
+      cursor: pointer; }
+
+.v-introduction {
+  max-width: 1560;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 190px; }
+  .v-introduction .v-hi {
+    max-width: 360px;
+    font-family: 'Patrick Hand';
+    font-size: 64px; }
+  .v-introduction .v-introduction__body--photo {
+    position: relative;
+    z-index: 100; }
+    .v-introduction .v-introduction__body--photo .v-main-photo {
+      width: 100%; }
+      .v-introduction .v-introduction__body--photo .v-main-photo img {
+        border: 5px solid #333333;
+        -webkit-filter: drop-shadow(5px 10px 0px #000000);
+                filter: drop-shadow(5px 10px 0px #000000);
+        border-radius: 20px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .v-introduction .v-introduction__body--photo .v-sub-photo {
+      position: absolute;
+      left: 390px;
+      top: 345px;
+      -webkit-transform: rotate(25.85deg);
+              transform: rotate(25.85deg);
+      border: 5px solid #333333;
+      -webkit-filter: drop-shadow(5px 10px 0px #000000);
+              filter: drop-shadow(5px 10px 0px #000000);
+      border-radius: 20px;
+      overflow: hidden; }
+      .v-introduction .v-introduction__body--photo .v-sub-photo img {
+        width: 430px;
+        height: 430px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -webkit-transform: rotate(-25.85deg) scale(1.4);
+                transform: rotate(-25.85deg) scale(1.4); }
+  .v-introduction .v-introduction__body--content {
+    width: calc(100%+160px);
+    height: 800px;
+    border: 5px solid #333333;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(20px 25px 0px #000000);
+            filter: drop-shadow(20px 25px 0px #000000);
+    background-color: white;
+    margin-left: -140px;
+    margin-right: -75px;
+    margin-top: -100px;
+    padding-left: 160px;
+    padding-top: 15px;
+    padding-right: 25px; }
+    .v-introduction .v-introduction__body--content .v-introduction__body__content--title {
+      font-family: 'Patrick Hand';
+      font-size: 46px;
+      margin-bottom: 25px; }
+    .v-introduction .v-introduction__body--content .v-introduction__body__content--text {
+      font-size: 24px;
+      line-height: 30px; }
+      .v-introduction .v-introduction__body--content .v-introduction__body__content--text .paragraph-1 {
+        margin-bottom: 25px;
+        margin-left: 35px; }
+      .v-introduction .v-introduction__body--content .v-introduction__body__content--text .paragraph-2 {
+        margin-bottom: 25px;
+        margin-left: 245px; }
+      .v-introduction .v-introduction__body--content .v-introduction__body__content--text .paragraph-3 {
+        margin-left: 245px; }
+
+.v-sticker-1 {
+  position: absolute;
+  margin-top: -250px;
+  left: -100px;
+  -webkit-filter: invert(87%) sepia(3%) saturate(11%) hue-rotate(344deg) brightness(86%) contrast(89%);
+          filter: invert(87%) sepia(3%) saturate(11%) hue-rotate(344deg) brightness(86%) contrast(89%); }
+
+.v-sticker-2 {
+  position: absolute;
+  margin-top: -135px;
+  right: 30px; }
+
+.v-post {
+  max-width: 1560;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 190px; }
+  .v-post .v-post--title {
+    font-family: 'Patrick Hand';
+    font-size: 64px;
+    margin-bottom: 64px; }
+  .v-post .v-post__item-list .v-post__item-list--item {
+    width: 90%;
+    height: 600px;
+    margin-bottom: 64px;
+    background-color: white;
+    border: 3px solid #333333;
+    -webkit-filter: drop-shadow(15px 15px 0px #000000);
+            filter: drop-shadow(15px 15px 0px #000000);
+    border-radius: 5px; }
+    .v-post .v-post__item-list .v-post__item-list--item .v-post__item-list__item--image {
+      margin-bottom: 20px; }
+      .v-post .v-post__item-list .v-post__item-list--item .v-post__item-list__item--image img {
+        width: 100%;
+        height: 350px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .v-post .v-post__item-list .v-post__item-list--item .v-post__item-list__item--label {
+      padding: 10px 22px;
+      background-color: #fcffda;
+      border: 3px solid #333333;
+      -webkit-filter: drop-shadow(2px 7px 0px #000000);
+              filter: drop-shadow(2px 7px 0px #000000);
+      border-radius: 5px;
+      font-size: 18px;
+      float: right;
+      margin-top: -45px;
+      margin-right: 20px; }
+    .v-post .v-post__item-list .v-post__item-list--item .v-item__main {
+      padding: 0px 30px;
+      line-height: 30px; }
+      .v-post .v-post__item-list .v-post__item-list--item .v-item__main .v-item__main--date {
+        font-size: 18px;
+        margin-bottom: 10px; }
+      .v-post .v-post__item-list .v-post__item-list--item .v-item__main .v-item__main--title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px; }
+      .v-post .v-post__item-list .v-post__item-list--item .v-item__main .v-item__main--content {
+        font-size: 24px; }
+  .v-post .v-post--view-more {
+    text-align: right; }
+    .v-post .v-post--view-more p {
+      font-family: 'Patrick Hand';
+      font-size: 72px;
+      position: relative;
+      cursor: pointer;
+      display: inline-block; }
+      .v-post .v-post--view-more p:before {
+        content: '';
+        background-image: url("../asset/images/arrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 70px;
+        height: 87px;
+        position: absolute;
+        top: 0;
+        right: 390px; }
+
+/*# sourceMappingURL=styles.css.map */
